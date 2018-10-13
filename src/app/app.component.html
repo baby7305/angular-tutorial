@@ -1,5 +1,8 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="push">
+  <mat-sidenav #sidenav1 mode="push" position="start">
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav #sidenav2 mode="push" position="end">
     <app-sidebar></app-sidebar>
   </mat-sidenav>
   <div class="site">
@@ -7,7 +10,8 @@
       <app-header></app-header>
     </header>
     <main>
-      <button (click)="sidenav.open()">打开侧边栏</button>
+      <button (click)="sidenav1.open()">打开左边侧边栏</button>
+      <button (click)="sidenav2.open()">打开右边侧边栏</button>
     </main>
     <footer>
       <app-footer></app-footer>
