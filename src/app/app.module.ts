@@ -5,10 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
+import { OfficialComponent } from './official/official.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OfficialComponent
   ],
   imports: [
     FormsModule,
